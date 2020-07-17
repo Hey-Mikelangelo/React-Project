@@ -1,0 +1,12 @@
+#post{
+    margin-top:20px;
+}
+
+.post_text{
+    color:green;
+}
+
+.img{
+    height: 40px;
+    border-radius: 30px;
+}

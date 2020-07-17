@@ -1,0 +1,35 @@
+POST	/auth/login
+	req-	headers: 
+		"email": 
+		"password":
+	
+	res-	"access_token":<acces_token>
+
+
+POST	/auth/register
+	req-	headers: 
+		"email": 
+		"password":
+	
+	res-	"access_token":<access_token>
+
+
+GET 	/data/users
+	req-	"authorization": "bearer <access_token>"
+		"page":
+		"limit":
+
+	res-	[{...}{...}]
+
+
+GET 	data/profile/:id
+	req- 	"authorization": "bearer <access_token>"
+	
+	res- 	{<userdata>}
+
+
+POST	/follow/:id 	|| 	/ /unfollow/:id
+	req- 	"authorization": "bearer <access_token>"
+		"id":
+
+	res- 	followed: id/already followed 	|| 	unfollowed: id

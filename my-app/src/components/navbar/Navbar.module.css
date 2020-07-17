@@ -1,0 +1,31 @@
+#side_menu li,
+li {
+    list-style: none;
+    padding-bottom: 17px;
+    font-size: 17px;
+}
+
+#side_menu dl,
+ol,
+ul {
+    padding-top: 40px;
+}
+
+#side_menu div {
+    background-color: #555;
+    height: 100vh;
+    position: fixed;
+    z-index: 2;
+    width: 160px;
+}
+
+#side_menu {
+    min-width: 160px;
+    height: 100%;
+    margin-right: 13px;
+    max-width: 160px;
+}
+
+#main_page_list_item {
+    padding-bottom: 60px !important;
+}

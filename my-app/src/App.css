@@ -1,0 +1,24 @@
+.app-wrapper{
+  
+  display: grid;
+  align-content: center;
+  grid-template-areas: 
+  'h h'
+  'n c';
+
+  grid-template-rows: 50px 1fr; 
+  grid-template-columns: 2fr 10fr; 
+  }
+
+
+
+
+
+
+a{
+  color: white;
+  text-decoration: none;
+}
+a:hover{
+  color: rgb(201, 201, 201);
+}

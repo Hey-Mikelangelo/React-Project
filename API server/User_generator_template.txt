@@ -1,0 +1,34 @@
+[
+  '{{repeat(10, 10)}}',
+  {
+    _id: '{{index()}}',
+    isActive: '{{bool()}}',  
+    picture: 'http://placehold.it/32x32',
+    age: '{{integer(20, 40)}}',
+    name: '{{firstName()}} {{surname()}}',
+    gender: '{{gender()}}',
+    company: '{{company().toUpperCase()}}',
+    email: '{{email()}}',
+    phone: '+1 {{phone()}}',
+    location: {
+      	city: '{{city()}}',
+        country: '{{country()}}'
+      },
+    about: '{{lorem(1, "paragraphs")}}',
+    registered: '{{date(new Date(2014, 0, 1), new Date(), "YYYY-MM-ddThh:mm:ss Z")}}',
+    tags: [
+      '{{repeat(7)}}',
+      '{{lorem(1, "words")}}'
+    ],
+    friends: [
+      '{{repeat(3)}}',
+      {
+        id: '{{index()}}',
+        name: '{{firstName()}} {{surname()}}'
+      }
+    ],
+    greeting: function (tags) {
+      return 'Hello, ' + this.name + '! You have ' + tags.integer(1, 10) + ' unread messages.';
+    }
+  }
+]

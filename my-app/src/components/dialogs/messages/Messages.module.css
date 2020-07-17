@@ -1,0 +1,63 @@
+.dialogs {
+    display: grid;
+    grid-template-columns: 2fr 10fr;
+
+}
+.message_wrapper{
+    padding-left: 10px;
+    padding: 10px;
+    background-color: silver;
+}
+.message.me{
+    background-color: orange;
+    justify-self: end;
+}
+
+.message.other {
+    justify-self: start;
+    background-color: greenyellow;
+}
+
+.message{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.messages {
+    display: grid;
+    max-width: 400px;
+    min-width: 200px;
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
+    background-color: #95999c;
+}
+
+.user img{
+    width: 40px;
+    height: 40px;
+    background-image: url(https://wifinowevents.s3.amazonaws.com/uploads/2016/07/BlackSilhouette.png);
+    border-radius: 30px;
+
+}
+
+.user{
+    font-size: 20px;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    align-items: center;
+}
+
+.contacts {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    grid-gap: 10px;
+}
+
+.dialog {
+}
+
+
+.message {
+
+}

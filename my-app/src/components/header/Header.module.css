@@ -1,0 +1,43 @@
+#header {
+  position: fixed;
+  overflow: hidden;
+  width: 100%;
+  top: 0;
+  z-index: 2;
+}
+
+#header > div {
+  background-color: #141414;
+  width: 100%;
+  height: 70px;
+  display: grid;
+  grid-template-columns: 1fr 10fr;
+}
+
+#logo img {
+  height: 100%;
+  width: 100%;
+  background-image: url(./../img/logo.jpg);
+  border-radius: 50%;
+  position: absolute;
+
+}
+
+#logo {
+  height: 55px;
+  position: relative;
+  width: 55px;
+  align-self: center;
+  justify-self: center;
+}
+
+#logo img {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.login a{
+  float: right;
+  color: white;
+}

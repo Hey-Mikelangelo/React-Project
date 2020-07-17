@@ -18,9 +18,9 @@ let initialState = {
         {id: 6, sender: "John", text: "Fine, see you"},
     ],
     DialogsData: [
-        {id: 1, name: "Rafik Zhirafik"},
-        {id: 2, name: "Vanya"},
-        {id: 3, name: "Katia"},
+        {id: 1, name: "Kek LOL"},
+        {id: 2, name: "Thanos"},
+        {id: 3, name: "Kat"},
         {id: 4, name: "Lembreasr"},
         {id: 5, name: "Geo"},
     ],

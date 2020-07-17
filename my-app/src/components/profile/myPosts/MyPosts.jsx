@@ -10,7 +10,6 @@ const MyPosts = (props) => {
     let OnChangePostText = (e) => {
         let text = e.target.value
         props.ChangePostText(text);
-        // props.dispatch({type: updateNewPostTextAC, text: e.target.value})
     }
 
     return (
